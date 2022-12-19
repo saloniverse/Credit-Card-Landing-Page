@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/solid.js" integrity="sha384-/BxOvRagtVDn9dJ+JGCtcofNXgQO/CCCVKdMfL115s3gOgQxWaX/tSq5V8dRgsbc" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/fontawesome.js" integrity="sha384-dPBGbj4Uoy1OOpM4+aRGfAOc0W37JkROT+3uynUgTHZCHZNMHfGXsmmvYTffZjYO" crossorigin="anonymous"></script>
+    
+    <!-- Title of the Page -->
+    <title>Credit Card Landing Page</title>
+</head>
+<body>
+       <!-- Navigation Bar -->
+    <nav class="fixed bg-black flex w-full justify-between items-center px-32 text-white">
+            <div>
+                <a href="#"><img src="./Assets/Icons/Logo.svg" class="w-32 h-20" /></a>
+            </div>
+            <ul class="flex justify-center items-center gap-6 ml-6">
+                <li><a href="#" class="hover:text-slate-50">Home</a></li>
+                <li><a href="#" class="hover:text-slate-50">Features</a></li>
+                <li><a href="#" class="hover:text-slate-50">Pricing</a></li>
+                <li><a href="#" class="hover:text-slate-50">About Us</a></li>
+            </ul>
+            <div class="flex justify-center items-center gap-3"> 
+                <a href="#">Eng</a>
+                <div class="h-0 w-0 border-x-4 border-x-transparent border-b-[6px] border-b-white-400 rotate-180"></div>
+                <button class="bg-[url('/Assets/Icons/btn-pink-bg.svg')] bg-no-repeat w-28 h-4 ml-6">Contact Us</button>
+            </div>
+    </nav>
+        <!-- Main Content Section -->
+        <main class="flex bg-black text-white px-36 h-screen items-start pt-20">
+            <!-- Left Part -->
+            <div class="w-1/2 text-center flex flex-col justify-center items-center gap-6">
+                <h1>Simplify All Transactions in One Card</h1>
+                <p>Hurry up and join now, with this you can manage your daily finances easily and safely.</p>
+                <button class="bg-[url('/Assets/Icons/btn-pink-bg.svg')] bg-no-repeat w-44 h-4 ml-6">
+                    GET STARTRD
+                    <img src="./Assets/Icons/RightArrow.svg" alt="Right Arrow" />
+                </button>
+                
+                <div class="flex">
+                    <h2>42K <span>+</span></h2>
+                    <p>Happy Active User</p>
+                    <img src="./Assets/Icons/Vector 402.svg" alt="Line">
+                    <h2>12K <span>+</span></h2>
+                    <p>Years Experience</p>            
+                </div>  
+
+
+            </div>
+            <!-- Right Part -->
+            <!-- <img src="./Assets/Photos/backCards.png" alt="Back Card">
+            <img src="./Assets/Photos/frontCards.png" alt="Front Card"> -->
+        </main>
+</body>
+</html>
