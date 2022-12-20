@@ -15,11 +15,11 @@
     <!-- Title of the Page -->
     <title>Credit Card Landing Page</title>
 </head>
-<body>
+<body class="overflow-x-hidden bg-black text-white">
        <!-- Navigation Bar -->
-    <nav class="fixed bg-black flex w-full justify-between items-center px-32 text-white">
+    <nav class="fixed bg-black flex w-full justify-between items-center px-20 z-50">
             <div>
-                <a href="#"><img src="./Assets/Icons/Logo.svg" class="w-32 h-20" /></a>
+                <a href="#"><img src="./Assets/Icons/Logo.svg" class="w-28 h-20" /></a>
             </div>
             <ul class="flex justify-center items-center gap-6 ml-6">
                 <li><a href="#" class="hover:text-slate-50">Home</a></li>
@@ -29,34 +29,134 @@
             </ul>
             <div class="flex justify-center items-center gap-3"> 
                 <a href="#">Eng</a>
-                <div class="h-0 w-0 border-x-4 border-x-transparent border-b-[6px] border-b-white-400 rotate-180"></div>
-                <button class="bg-[url('/Assets/Icons/btn-pink-bg.svg')] bg-no-repeat w-28 h-4 ml-6">Contact Us</button>
+                <a href="#"><div class="h-0 w-0 border-x-4 border-x-transparent border-b-[6px] border-b-white-400 rotate-180"></div></a>
+                <button class="bg-[url('/Assets/Icons/btn-pink-bg.svg')] bg-no-repeat w-28 h-6 ml-6 pb-5">Contact Us</button>
             </div>
     </nav>
         <!-- Main Content Section -->
-        <main class="flex bg-black text-white px-36 h-screen items-start pt-20">
+        <main class="flex px-20 h-screen pt-10 w-full">
             <!-- Left Part -->
-            <div class="w-1/2 text-center flex flex-col justify-center items-center gap-6">
-                <h1>Simplify All Transactions in One Card</h1>
-                <p>Hurry up and join now, with this you can manage your daily finances easily and safely.</p>
-                <button class="bg-[url('/Assets/Icons/btn-pink-bg.svg')] bg-no-repeat w-44 h-4 ml-6">
+            <div class="text-center flex flex-col justify-center gap-6 z-30">
+                <h1 class="w-4/6 text-6xl text-left font-[300]">Simplify All Transactions in <span class="text-[#de46de] font-semibold">One Card</span></h1>
+                <p class="w-2/4 text-left text-gray-400">Hurry up and join now, with this you can manage your daily finances easily and safely.</p>
+                <div class="bg-[url('/Assets/Icons/btn-pink-bg.svg')] bg-no-repeat w-48 h-8 ml-6">
                     GET STARTRD
-                    <img src="./Assets/Icons/RightArrow.svg" alt="Right Arrow" />
-                </button>
+                    <img src="./Assets/Icons/RightArrow.svg" alt="Right Arrow" class="inline-block" />
+                </div>
                 
                 <div class="flex">
-                    <h2>42K <span>+</span></h2>
-                    <p>Happy Active User</p>
-                    <img src="./Assets/Icons/Vector 402.svg" alt="Line">
-                    <h2>12K <span>+</span></h2>
-                    <p>Years Experience</p>            
-                </div>  
-
-
+                    <h2 class="text-4xl">42K<span class="text-[#de46de]">+</span></h2>
+                    <p class="w-[80px] text-left ml-3">Happy Active User</p>
+                    <img src="./Assets/Icons/Vector 402.svg" alt="Line" class="mx-6 h-3/4">
+                    <h2 class="text-4xl">12K<span class="text-[#de46de]">+</span></h2>
+                    <p class="w-[80px] text-left mx-3">Years Experience</p>            
+                </div>
             </div>
             <!-- Right Part -->
-            <!-- <img src="./Assets/Photos/backCards.png" alt="Back Card">
-            <img src="./Assets/Photos/frontCards.png" alt="Front Card"> -->
+            <div class="absolute right-2 top-6 z-10 w-1/2"><img src="./Assets/Photos/backCards.png" alt="Back Card"></div>
+            <div class="absolute right-[-160px] top-20 z-20 w-1/2"><img src="./Assets/Photos/frontCards.png" alt="Front Card"></div>
         </main>
+        <!-- Multiple Logo Banner -->
+        <section class="bg-stone-800 flex justify-around items-center px-32 py-8">
+            <div>
+                <a href="#"><img src="./Assets/Icons/Logo.svg" class="w-28 h-20" /></a>
+            </div>
+            <div>
+                <a href="#"><img src="./Assets/Icons/Logo.svg" class="w-28 h-20" /></a>
+            </div>
+            <div>
+                <a href="#"><img src="./Assets/Icons/Logo.svg" class="w-28 h-20" /></a>
+            </div>
+            <div>
+                <a href="#"><img src="./Assets/Icons/Logo.svg" class="w-28 h-20" /></a>
+            </div>
+            <div>
+                <a href="#"><img src="./Assets/Icons/Logo.svg" class="w-28 h-20" /></a>
+            </div>
+        </section>
+        <section class="flex flex-col justify-center items-center px-20 py-28">
+            <div class="flex justify-center items-center gap-6">
+                <h2 class="w-2/5 text-5xl">The best payment service for <span class="text-[#de46de] font-semibold">your transactions.</span></h2>
+                <p class="w-1/4 text-gray-400 text-sm">The following are the services we provide to users, with the services we maximize it is hoped that users are satisfied with what we provide.</p>
+            </div>
+            <div class="flex gap-8 mt-16">
+                <div class="bg-neutral-800 border-2 border-neutral-500 flex flex-col justify-center items-center px-7 py-10 mt-10">
+                    <img src="./Assets/Icons/dollar-circle.svg" alt="Dollar Circle" class="w-1/2">
+                    <p>Free transaction fee</p>
+                </div>
+                <div class="bg-stone-600 border-2 border-stone-300 flex flex-col justify-center items-center px-7 py-10 mb-10">
+                    <img src="./Assets/Icons/cloud-add.svg" alt="Cloud" class="w-1/2">
+                    <p class="text-center">Easy to access<br>anytime and anywhere</p>
+                </div>
+                <div class="bg-neutral-800 border-2 border-neutral-500 flex flex-col justify-center items-center px-7 py-10 mt-10">
+                    <img src="./Assets/Icons/lock.svg" alt="Lock" class="w-1/2">
+                    <p>Guaranteed Safety</p>
+                </div>
+            </div>
+        </section>
+        <section class="bg-zinc-100 flex flex-col justify-center items-center gap-6 pt-24">
+            <h2 class=" text-5xl text-black">Unique and interesting</h2>
+            <span class="text-5xl font-semibold text-[#de46de]">card choices</span> 
+            <p class="text-sm text-gray-400 w-2/5 mt-6 text-center">We provide card editing features, where users can edit unique cards according to the wishes and preferences of the users themselves.</p>
+            <img src="./Assets/Photos/VCards.png" alt="VCards" class="relative bottom-10 w-1/2">    
+        </section>
+        <section class="flex flex-col justify-center items-center gap-4 py-16">
+            <h2 class="text-5xl">Customers are satisfied with<br>
+            <span class="text-5xl font-semibold text-[#de46de]">the features</span> we provide
+            </h2>
+            <p class="text-sm text-gray-400 w-2/5 mt-6 text-center">With the various features that we provide, therefore many customers like the features that we provide.</p>
+            <div class="grid grid-rows-2 grid-cols-2 gap-16 py-16 px-36 text-xs text-gray-200 justify-center content-center">
+                <div class="w-4/5 bg-stone-600 border-2 border-stone-300 flex flex-col items-start justify-between px-7 py-4 gap-8">
+                    <img src="./Assets/Icons/5stars.svg" alt="5 Stars" class="w-1/3">
+                    <p>This is the best finance platform i've ever found, lots of features that definitely make me more satisfied!</p>
+                    <p>Melvin Yoga<br><span class="text-gray-400">New York, America</span> </p>
+                </div>
+                <div class="w-4/5 bg-neutral-800 border-2 border-neutral-500 flex flex-col items-start justify-between px-7 py-4 gap-8">
+                    <img src="./Assets/Icons/4stars.svg" alt="4 Stars" class="w-1/3">
+                    <p>Very good and recommended financial platform, the features are very satisfying, you all should try this platform.</p>
+                    <p>Gabriel Putra<br><span class="text-gray-400">Jakarta, Indonesia</span></p>
+                </div>
+                <div class="w-4/5 bg-neutral-800 border-2 border-neutral-500 flex flex-col items-start justify-between px-7 py-4 gap-8">
+                    <img src="./Assets/Icons/4stars.svg" alt="4 Stars" class="w-1/3">
+                    <p>This is the first time I have found a financial platform as good as this, with various features that really help me in managing my finances.</p>
+                    <p>Farhan Putra<br><span class="text-gray-400">Paris, French</span></p>
+                </div>
+                <div class="w-4/5 bg-neutral-800 border-2 border-neutral-500 flex flex-col items-start justify-between px-7 py-4 gap-8">
+                    <img src="./Assets/Icons/4stars.svg" alt="4 Stars" class="w-1/3">
+                    <p>The best financialplatform i've ever found, here we can custom cards according to our wishes, I;m very satisfied!</p>
+                    <p>Alex Georgio<br><span class="text-gray-400">Wangon, Indonesia</span></p>
+                </div>
+            </div>
+            <div class="flex pb-48 gap-4">
+                <div class="w-24 h-3 bg-[#de46de] rounded-full"></div>
+                <div class="w-3 h-3 bg-gray-600 rounded-full"></div>
+                <div class="w-3 h-3 bg-gray-600 rounded-full"></div>
+                <div class="w-3 h-3 bg-gray-600 rounded-full"></div>
+            </div>
+        </section>
+        <section class="flex flex-col justify-center items-center gap-12">
+            <img src="./Assets/Photos/Rectangle 6773.png" alt="" class="absolute">
+            <img src="./Assets/Photos/Rectangle 6774.png" alt="" class="absolute">
+            <img src="./Assets/Photos/Diamond-right.png" alt="" class="absolute left-0">
+            <img src="./Assets/Photos/Diamond-left.png" alt="" class="absolute right-0">
+            <h2 class="text-5xl text-center relative z-10">Let's start <span class="text-black">customing </span>your<br>card now</h2>
+            <div class="relative z-10 bg-[url('/Assets/Icons/btn-pink-bg.svg')] bg-no-repeat w-48 h-8 ml-6">
+            GET STARTRD
+            <img src="./Assets/Icons/RightArrow.svg" alt="Right Arrow" class="inline-block" />
+            </div>       
+        </section>
+        <footer class="flex w-full justify-start items-center px-32 py-16 gap-32 mt-32">
+                <div>
+                    <a href="#"><img src="./Assets/Icons/Logo.svg" class="w-28 h-20" /></a>
+                </div>
+                <ul class="flex justify-center items-center gap-6">
+                    <li><a href="#" class="hover:text-slate-50">Branding</a></li>
+                    <li><a href="#" class="hover:text-slate-50">Contact Us</a></li>
+                    <li><a href="#" class="hover:text-slate-50">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:text-slate-50">FAQs</a></li>
+                </ul>
+ 
+        </nav>
+        </footer>
 </body>
 </html>
