@@ -17,3 +17,7 @@ This webpage titled Credit Card Landing is made using HTML and Tailwind CSS. As 
  * ## Output:
 
    ![](./Assets/output.gif)
+
+ * ## Mobile Responsive: Yes ✅
+
+   ![](./Assets/Mobile%20Output.gif)   
